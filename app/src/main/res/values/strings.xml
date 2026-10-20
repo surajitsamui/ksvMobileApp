@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Temple Donation Manager</string>
+    <string name="temple_name">KANDUAH SATSANG VIHAR</string>
+    <string name="temple_subtitle">Devotee &amp; Financial Management</string>
+
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_devotees">Manage Devotees</string>
+    <string name="title_donations">Monthly Donation</string>
+    <string name="title_expenses">Expenses</string>
+    <string name="title_report">Monthly Report</string>
+
+    <string name="total_donation">Total Donation</string>
+    <string name="total_expense">Total Expense</string>
+    <string name="balance">Balance</string>
+
+    <string name="btn_add_devotee">Add Devotee</string>
+    <string name="btn_record_donation">Save Donation</string>
+    <string name="btn_add_expense">Add Expense</string>
+    <string name="btn_view_report">VIEW REPORT</string>
+    <string name="btn_download_pdf">DOWNLOAD PDF</string>
+    <string name="btn_share_pdf">SHARE PDF</string>
+</resources>

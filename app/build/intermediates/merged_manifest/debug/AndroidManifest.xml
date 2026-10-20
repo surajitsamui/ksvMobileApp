@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.temple.donation"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="34" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission
+        android:name="com.temple.donation.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.temple.donation.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.TempleDonationManager"
+        android:usesCleartextTraffic="true" >
+
+        <!-- Main Dashboard -->
+        <activity
+            android:name="com.temple.donation.activities.MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Devotee Management -->
+        <activity
+            android:name="com.temple.donation.activities.DevoteeActivity"
+            android:label="@string/title_devotees"
+            android:parentActivityName="com.temple.donation.activities.MainActivity" />
+
+        <!-- Monthly Donation -->
+        <activity
+            android:name="com.temple.donation.activities.DonationActivity"
+            android:label="@string/title_donations"
+            android:parentActivityName="com.temple.donation.activities.MainActivity" />
+
+        <!-- Expenses -->
+        <activity
+            android:name="com.temple.donation.activities.ExpenseActivity"
+            android:label="@string/title_expenses"
+            android:parentActivityName="com.temple.donation.activities.MainActivity" />
+
+        <!-- Monthly Report & PDF Export -->
+        <activity
+            android:name="com.temple.donation.activities.ReportActivity"
+            android:label="@string/title_report"
+            android:parentActivityName="com.temple.donation.activities.MainActivity" />
+
+        <!-- FileProvider for Sharing Generated PDFs securely -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.temple.donation.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.temple.donation.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

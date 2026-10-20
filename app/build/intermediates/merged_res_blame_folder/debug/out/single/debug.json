@@ -1,0 +1,130 @@
+[
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.temple.donation.app-main-34:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.temple.donation.app-main-34:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/layout_item_monthly_status.xml.flat",
+        "source": "com.temple.donation.app-main-34:/layout/item_monthly_status.xml"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.temple.donation.app-main-34:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/layout_item_devotee.xml.flat",
+        "source": "com.temple.donation.app-main-34:/layout/item_devotee.xml"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/drawable_bg_status_pending.xml.flat",
+        "source": "com.temple.donation.app-main-34:/drawable/bg_status_pending.xml"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/xml_file_paths.xml.flat",
+        "source": "com.temple.donation.app-main-34:/xml/file_paths.xml"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.temple.donation.app-main-34:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.temple.donation.app-main-34:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/layout_item_report_row.xml.flat",
+        "source": "com.temple.donation.app-main-34:/layout/item_report_row.xml"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/drawable_bg_status_paid.xml.flat",
+        "source": "com.temple.donation.app-main-34:/drawable/bg_status_paid.xml"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/layout_activity_donation.xml.flat",
+        "source": "com.temple.donation.app-main-34:/layout/activity_donation.xml"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/layout_activity_devotee.xml.flat",
+        "source": "com.temple.donation.app-main-34:/layout/activity_devotee.xml"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.temple.donation.app-main-34:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.temple.donation.app-main-34:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.temple.donation.app-main-34:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.temple.donation.app-main-34:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.temple.donation.app-main-34:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.temple.donation.app-main-34:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/layout_dialog_add_expense.xml.flat",
+        "source": "com.temple.donation.app-main-34:/layout/dialog_add_expense.xml"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.temple.donation.app-main-34:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/layout_activity_main.xml.flat",
+        "source": "com.temple.donation.app-main-34:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/layout_activity_expense.xml.flat",
+        "source": "com.temple.donation.app-main-34:/layout/activity_expense.xml"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.temple.donation.app-main-34:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/layout_item_expense.xml.flat",
+        "source": "com.temple.donation.app-main-34:/layout/item_expense.xml"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.temple.donation.app-main-34:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.temple.donation.app-main-34:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/layout_dialog_add_devotee.xml.flat",
+        "source": "com.temple.donation.app-main-34:/layout/dialog_add_devotee.xml"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/layout_activity_report.xml.flat",
+        "source": "com.temple.donation.app-main-34:/layout/activity_report.xml"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.temple.donation.app-main-34:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.temple.donation.app-main-34:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.temple.donation.app-merged_res-32:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.temple.donation.app-main-34:/mipmap-hdpi/ic_launcher_round.webp"
+    }
+]

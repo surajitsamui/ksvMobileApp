@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_gold">#FFB300</color>
+    <color name="black">#000000</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="divider_color">#E2E8F0</color>
+    <color name="expense_red">#DC2626</color>
+    <color name="expense_red_bg">#FEE2E2</color>
+    <color name="primary_blue">#1565C0</color>
+    <color name="primary_blue_dark">#0D47A1</color>
+    <color name="primary_blue_light">#E3F2FD</color>
+    <color name="status_paid">#16A34A</color>
+    <color name="status_paid_bg">#DCFCE7</color>
+    <color name="status_pending">#EA580C</color>
+    <color name="status_pending_bg">#FFEDD5</color>
+    <color name="text_hint">#94A3B8</color>
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="window_background">#F8FAFC</color>
+    <string name="app_name">Temple Donation Manager</string>
+    <string name="balance">Balance</string>
+    <string name="btn_add_devotee">Add Devotee</string>
+    <string name="btn_add_expense">Add Expense</string>
+    <string name="btn_download_pdf">DOWNLOAD PDF</string>
+    <string name="btn_record_donation">Save Donation</string>
+    <string name="btn_share_pdf">SHARE PDF</string>
+    <string name="btn_view_report">VIEW REPORT</string>
+    <string name="temple_name">KANDUAH SATSANG VIHAR</string>
+    <string name="temple_subtitle">Devotee &amp; Financial Management</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_devotees">Manage Devotees</string>
+    <string name="title_donations">Monthly Donation</string>
+    <string name="title_expenses">Expenses</string>
+    <string name="title_report">Monthly Report</string>
+    <string name="total_donation">Total Donation</string>
+    <string name="total_expense">Total Expense</string>
+    <style name="Theme.TempleDonationManager" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryVariant">@color/primary_blue_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        
+        <item name="colorSecondary">@color/accent_gold</item>
+        <item name="colorSecondaryVariant">#FFA000</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        
+        <item name="android:statusBarColor">@color/primary_blue_dark</item>
+        <item name="android:windowBackground">@color/window_background</item>
+    </style>
+</resources>
