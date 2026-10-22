@@ -15,7 +15,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.temple.donation.R;
 import com.temple.donation.network.BackendApi;
-
 import org.json.JSONObject;
 
 import java.text.NumberFormat;
@@ -38,8 +37,49 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        // This activity is the ADMIN dashboard. Do not allow a DEVOTEE token here.
+        String role = BackendApi.getRole(this);
+        if (!BackendApi.isLoggedIn(this) || !"ADMIN".equalsIgnoreCase(role)) {
+            BackendApi.logout(this);
+            Toast.makeText(this, "Please sign in with an Admin account.", Toast.LENGTH_LONG).show();
+            finish();
+            return;
+        }
 
+        setContentView(R.layout.activity_main);
+        Button btnLogout = findViewById(R.id.btnLogout);
+        btnLogout.setOnClickListener(v ->
+                new AlertDialog.Builder(MainActivity.this)
+                        .setTitle("Confirm Logout")
+                        .setMessage("Are you sure you want to logout?")
+                        .setNegativeButton("Cancel", null)
+                        .setPositiveButton("Logout", (dialog, which) -> {
+
+                            // Clear the actual authentication session and JWT
+                            BackendApi.logout(MainActivity.this);
+
+                            Toast.makeText(
+                                    MainActivity.this,
+                                    "Logged out successfully",
+                                    Toast.LENGTH_SHORT
+                            ).show();
+
+                            // Return to login selection and clear dashboard history
+                            Intent intent = new Intent(
+                                    MainActivity.this,
+                                    LoginSelectionActivity.class
+                            );
+
+                            intent.setFlags(
+                                    Intent.FLAG_ACTIVITY_NEW_TASK
+                                            | Intent.FLAG_ACTIVITY_CLEAR_TASK
+                            );
+
+                            startActivity(intent);
+                            finish();
+                        })
+                        .show()
+        );
         initViews();
         setupSpinners();
         setupClickListeners();
@@ -50,9 +90,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        if (dashboardViewsReady) {
-            refreshDashboardData();
-        }
+        if (dashboardViewsReady) refreshDashboardData();
     }
 
     private void initViews() {
@@ -155,7 +193,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void refreshDashboardData() {
-        if (spFinancialYear == null || spMonth == null
+        if (!dashboardViewsReady || spFinancialYear == null || spMonth == null
                 || tvSelectedMonthHeader == null) {
             return;
         }
@@ -196,12 +234,12 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this,
                         "Could not load dashboard: " + message,
                         Toast.LENGTH_LONG).show();
+
+                if (message != null && message.contains("HTTP 401")) {
+                    BackendApi.logout(MainActivity.this);
+                    finish();
+                }
             }
         });
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
     }
 }

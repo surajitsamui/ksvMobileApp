@@ -8,6 +8,10 @@
         "source": "com.temple.donation.app-main-34:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
+        "merged": "com.temple.donation.app-merged_res-32:/layout_activity_login_selection.xml.flat",
+        "source": "com.temple.donation.app-main-34:/layout/activity_login_selection.xml"
+    },
+    {
         "merged": "com.temple.donation.app-merged_res-32:/layout_item_monthly_status.xml.flat",
         "source": "com.temple.donation.app-main-34:/layout/item_monthly_status.xml"
     },

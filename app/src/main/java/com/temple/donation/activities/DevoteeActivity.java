@@ -178,9 +178,11 @@ public class DevoteeActivity extends AppCompatActivity {
         View dialogView = LayoutInflater.from(this).inflate(R.layout.dialog_add_devotee, null);
 
         EditText etName = dialogView.findViewById(R.id.etDialogName);
+        EditText etEmail = dialogView.findViewById(R.id.etDialogEmail);
         EditText etMobile = dialogView.findViewById(R.id.etDialogMobile);
         EditText etAddress = dialogView.findViewById(R.id.etDialogAddress);
         EditText etAmount = dialogView.findViewById(R.id.etDialogAmount);
+        EditText etDialogTemporaryPassword = dialogView.findViewById(R.id.etDialogTemporaryPassword);
         CheckBox cbActive = dialogView.findViewById(R.id.cbDialogActive);
         Button btnSave = dialogView.findViewById(R.id.btnDialogSave);
         Button btnCancel = dialogView.findViewById(R.id.btnDialogCancel);
@@ -195,6 +197,8 @@ public class DevoteeActivity extends AppCompatActivity {
             etMobile.setText(existingDevotee.getMobile());
             etAddress.setText(existingDevotee.getAddress());
             etAmount.setText(String.valueOf(existingDevotee.getMonthlyAmount()));
+            etEmail.setText(existingDevotee.getEmail() == null? "":existingDevotee.getEmail());
+            etDialogTemporaryPassword.setText(existingDevotee.getTemporaryPassword());
             cbActive.setChecked(existingDevotee.isActive());
         } else {
             dialog.setTitle("Add New Devotee");
@@ -205,9 +209,11 @@ public class DevoteeActivity extends AppCompatActivity {
         btnCancel.setOnClickListener(v -> dialog.dismiss());
         btnSave.setOnClickListener(v -> {
             String name = etName.getText().toString().trim();
+            String email = etEmail.getText().toString().trim();
             String mobile = etMobile.getText().toString().trim();
             String address = etAddress.getText().toString().trim();
             String amountText = etAmount.getText().toString().trim();
+            String temporaryPassword = etDialogTemporaryPassword.getText().toString().trim();
 
             if (name.isEmpty()) {
                 etName.setError("Devotee name is required");
@@ -215,6 +221,18 @@ public class DevoteeActivity extends AppCompatActivity {
             }
             if (amountText.isEmpty()) {
                 etAmount.setError("Default monthly amount is required");
+                return;
+            }
+
+            if (email.isEmpty()) {
+                etEmail.setError("Email ID is required");
+                etEmail.requestFocus();
+                return;
+            }
+
+            if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                etEmail.setError("Enter a valid email address");
+                etEmail.requestFocus();
                 return;
             }
 
@@ -230,12 +248,26 @@ public class DevoteeActivity extends AppCompatActivity {
                 return;
             }
 
+            if (temporaryPassword.isEmpty()) {
+                etDialogTemporaryPassword.setError("Temporary password is required");
+                etDialogTemporaryPassword.requestFocus();
+                return;
+            }
+
+            if (temporaryPassword.length() < 8) {
+                etDialogTemporaryPassword.setError("Password must be at least 8 characters");
+                etDialogTemporaryPassword.requestFocus();
+                return;
+            }
+
             JSONObject body = new JSONObject();
             try {
                 body.put("name", name);
                 body.put("mobile", mobile);
+                body.put("email", email);
                 body.put("address", address);
                 body.put("monthlyAmount", amount);
+                body.put("temporaryPassword", temporaryPassword);
                 body.put("active", cbActive.isChecked());
             } catch (JSONException e) {
                 showToast("Could not prepare devotee details.");
@@ -313,11 +345,15 @@ public class DevoteeActivity extends AppCompatActivity {
         String name = json.optString("name", "");
         String mobile = json.isNull("mobile") ? "" : json.optString("mobile", "");
         String address = json.isNull("address") ? "" : json.optString("address", "");
+        String email = json.isNull("email") ? "" : json.optString("email", "");
+        String temporaryPassword = json.isNull("temporaryPassword") ? "" : json.optString("temporaryPassword", "");
         double monthlyAmount = json.optDouble("monthlyAmount", 0.0);
         boolean active = json.optBoolean("active", true);
 
         Devotee devotee = new Devotee(name, mobile, address, monthlyAmount, active);
         devotee.setId(json.getInt("id"));
+        devotee.setEmail(email);
+        devotee.setTemporaryPassword(temporaryPassword);
         return devotee;
     }
 

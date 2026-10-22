@@ -3193,7 +3193,9 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnAdminLogin
 id btnDeleteDonation
+id btnDevoteeLogin
 id btnDevoteesMasterExcel
 id btnDevoteesMasterPdf
 id btnDialogCancel
@@ -3213,6 +3215,7 @@ id btnItemDevoteeDelete
 id btnItemDevoteeDonations
 id btnItemDevoteeEdit
 id btnItemDevoteeToggle
+id btnLogout
 id btnManageDevotees
 id btnMonthAction
 id btnMonthlyDonation
@@ -3308,8 +3311,10 @@ id enterAlways
 id enterAlwaysCollapsed
 id etDialogAddress
 id etDialogAmount
+id etDialogEmail
 id etDialogMobile
 id etDialogName
+id etDialogTemporaryPassword
 id etDonationAmount
 id etDonationDate
 id etDonationRemarks
@@ -3801,6 +3806,7 @@ layout abc_tooltip
 layout activity_devotee
 layout activity_donation
 layout activity_expense
+layout activity_login_selection
 layout activity_main
 layout activity_report
 layout custom_dialog

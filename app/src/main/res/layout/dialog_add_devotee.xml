@@ -29,6 +29,17 @@
         android:hint="Mobile Number"
         android:inputType="phone" />
 
+    <!-- Email ID -->
+    <EditText
+        android:id="@+id/etDialogEmail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:hint="Email ID *"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:autofillHints="emailAddress" />
+
     <EditText
         android:id="@+id/etDialogAddress"
         android:layout_width="match_parent"
@@ -44,6 +55,17 @@
         android:layout_marginTop="10dp"
         android:hint="Default Monthly Amount (₹) *"
         android:inputType="numberDecimal" />
+
+    <!-- Temporary Password -->
+    <EditText
+        android:id="@+id/etDialogTemporaryPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:hint="Temporary Password *"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:autofillHints="newPassword" />
 
     <CheckBox
         android:id="@+id/cbDialogActive"
@@ -74,4 +96,5 @@
             android:layout_marginStart="12dp"
             android:text="Save" />
     </LinearLayout>
+
 </LinearLayout>

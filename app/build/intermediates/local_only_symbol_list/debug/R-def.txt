@@ -21,7 +21,9 @@ color window_background
 drawable bg_status_paid
 drawable bg_status_pending
 drawable ic_launcher_background
+id btnAdminLogin
 id btnDeleteDonation
+id btnDevoteeLogin
 id btnDevoteesMasterExcel
 id btnDevoteesMasterPdf
 id btnDialogCancel
@@ -41,6 +43,7 @@ id btnItemDevoteeDelete
 id btnItemDevoteeDonations
 id btnItemDevoteeEdit
 id btnItemDevoteeToggle
+id btnLogout
 id btnManageDevotees
 id btnMonthAction
 id btnMonthlyDonation
@@ -55,8 +58,10 @@ id btnYearlyPdf
 id cbDialogActive
 id etDialogAddress
 id etDialogAmount
+id etDialogEmail
 id etDialogMobile
 id etDialogName
+id etDialogTemporaryPassword
 id etDonationAmount
 id etDonationDate
 id etDonationRemarks
@@ -115,6 +120,7 @@ id tvTotalExpenseAmount
 layout activity_devotee
 layout activity_donation
 layout activity_expense
+layout activity_login_selection
 layout activity_main
 layout activity_report
 layout dialog_add_devotee
