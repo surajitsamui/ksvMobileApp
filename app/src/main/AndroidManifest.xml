@@ -25,6 +25,14 @@
             android:name=".activities.AdminLoginActivity"
             android:exported="false" />
 
+        <!-- Devotee login screen -->
+        <activity
+            android:name=".activities.DevoteeLoginActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.DevoteeDashboardActivity"
+            android:exported="false" />
         <!-- Admin dashboard -->
         <activity
             android:name=".activities.MainActivity"

@@ -43,6 +43,13 @@
             android:name="com.temple.donation.activities.AdminLoginActivity"
             android:exported="false" />
 
+        <!-- Devotee login screen -->
+        <activity
+            android:name="com.temple.donation.activities.DevoteeLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.temple.donation.activities.DevoteeDashboardActivity"
+            android:exported="false" />
         <!-- Admin dashboard -->
         <activity
             android:name="com.temple.donation.activities.MainActivity"
