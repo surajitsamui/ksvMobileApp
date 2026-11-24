@@ -3195,7 +3195,15 @@ id bounceEnd
 id bounceStart
 id btnAdminLogin
 id btnDeleteDonation
+id btnDevoteeDownloadExcel
+id btnDevoteeDownloadPdf
 id btnDevoteeLogin
+id btnDevoteeLogout
+id btnDevoteeRefresh
+id btnDevoteeShareExcel
+id btnDevoteeSharePdf
+id btnDevoteeYearlyExcel
+id btnDevoteeYearlyPdf
 id btnDevoteesMasterExcel
 id btnDevoteesMasterPdf
 id btnDialogCancel
@@ -3211,6 +3219,7 @@ id btnExpenses
 id btnExpensesMasterExcel
 id btnExpensesMasterPdf
 id btnFreshStart
+id btnHeaderLogout
 id btnItemDevoteeDelete
 id btnItemDevoteeDonations
 id btnItemDevoteeEdit
@@ -3220,6 +3229,7 @@ id btnManageDevotees
 id btnMonthAction
 id btnMonthlyDonation
 id btnMonthlyReport
+id btnPublishReport
 id btnSaveDonation
 id btnSendSms
 id btnShareExcel
@@ -3267,6 +3277,7 @@ id currentState
 id custom
 id customPanel
 id cut
+id cvPublishControl
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -3387,6 +3398,10 @@ id line3
 id linear
 id listMode
 id list_item
+id llDevoteeMonthlyReportContainer
+id llDevoteeReportPendingNotice
+id llDevoteeYearlyPendingNotice
+id llDevoteeYearlyReportContainer
 id llHeader
 id llReportContainer
 id m3_side_sheet
@@ -3516,6 +3531,8 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rvDevoteeTempleDonations
+id rvDevoteeTempleExpenses
 id rvDevotees
 id rvExpenses
 id rvMonthlyStatus
@@ -3560,6 +3577,8 @@ id snap
 id snapMargins
 id south
 id spDevotee
+id spDevoteeFY
+id spDevoteeMonth
 id spDonationFY
 id spDonationMonth
 id spExpenseFY
@@ -3640,6 +3659,13 @@ id transition_transform
 id triangle
 id tvBalance
 id tvDefaultAmountNotice
+id tvDevoteeBalance
+id tvDevoteeHeaderTitle
+id tvDevoteePublishStatus
+id tvDevoteeTotalDonation
+id tvDevoteeTotalExpense
+id tvDevoteeWelcome
+id tvDevoteeYearlyStatus
 id tvExpenseItemAmount
 id tvExpenseItemDate
 id tvExpenseItemDesc
@@ -3652,8 +3678,13 @@ id tvItemDevoteeStatus
 id tvMonthAmount
 id tvMonthName
 id tvMonthStatus
+id tvMyDonationReportText
 id tvPaidCount
 id tvPendingCount
+id tvPendingNoticeDetail
+id tvPersonalSummary
+id tvPublishNote
+id tvPublishStatus
 id tvReportBalance
 id tvReportRowAmount
 id tvReportRowSubtitle
@@ -3804,6 +3835,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_devotee
+layout activity_devotee_dashboard
 layout activity_donation
 layout activity_expense
 layout activity_login_selection

@@ -9,8 +9,8 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:4:5-67
-11-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:4:22-64
+11-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:3:5-67
+11-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:3:22-64
 12
 13    <permission
 13-->[androidx.core:core:1.12.0] C:\Users\Surajit\.gradle\caches\transforms-3\8f6e9f4ca69ac5774f863c2da99d52ee\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
@@ -24,130 +24,130 @@
 17-->[androidx.core:core:1.12.0] C:\Users\Surajit\.gradle\caches\transforms-3\8f6e9f4ca69ac5774f863c2da99d52ee\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
 18
 19    <application
-19-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:6:5-79:19
+19-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:5:5-78:19
 20        android:allowBackup="true"
-20-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:7:9-35
+20-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:6:9-35
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 21-->[androidx.core:core:1.12.0] C:\Users\Surajit\.gradle\caches\transforms-3\8f6e9f4ca69ac5774f863c2da99d52ee\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
 22        android:debuggable="true"
 23        android:extractNativeLibs="false"
 24        android:label="@string/app_name"
-24-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:9:9-41
+24-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:8:9-41
 25        android:supportsRtl="true"
-25-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:10:9-35
+25-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:9:9-35
 26        android:testOnly="true"
 27        android:theme="@style/Theme.TempleDonationManager"
-27-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:11:9-59
+27-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:10:9-59
 28        android:usesCleartextTraffic="true" >
-28-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:8:9-44
+28-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:7:9-44
 29
 30        <!-- Login selection screen -->
 31        <activity
-31-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:14:9-21:20
+31-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:13:9-20:20
 32            android:name="com.temple.donation.activities.LoginSelectionActivity"
-32-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:15:13-62
+32-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:14:13-62
 33            android:exported="true" >
-33-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:16:13-36
+33-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:15:13-36
 34            <intent-filter>
-34-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:17:13-20:29
+34-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:16:13-19:29
 35                <action android:name="android.intent.action.MAIN" />
-35-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:18:17-69
-35-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:18:25-66
+35-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:17:17-69
+35-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:17:25-66
 36
 37                <category android:name="android.intent.category.LAUNCHER" />
-37-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:19:17-77
-37-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:19:27-74
+37-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:18:17-77
+37-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:18:27-74
 38            </intent-filter>
 39        </activity>
 40
 41        <!-- Admin login screen -->
 42        <activity
-42-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:24:9-26:40
+42-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:23:9-25:40
 43            android:name="com.temple.donation.activities.AdminLoginActivity"
-43-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:25:13-58
+43-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:24:13-58
 44            android:exported="false" />
-44-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:26:13-37
+44-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:25:13-37
 45
 46        <!-- Devotee login screen -->
 47        <activity
-47-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:29:9-31:40
+47-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:28:9-30:40
 48            android:name="com.temple.donation.activities.DevoteeLoginActivity"
-48-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:30:13-60
+48-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:29:13-60
 49            android:exported="false" />
-49-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:31:13-37
+49-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:30:13-37
 50        <activity
-50-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:33:9-35:40
+50-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:32:9-34:40
 51            android:name="com.temple.donation.activities.DevoteeDashboardActivity"
-51-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:34:13-64
+51-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:33:13-64
 52            android:exported="false" />
-52-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:35:13-37
+52-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:34:13-37
 53        <!-- Admin dashboard -->
 54        <activity
-54-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:37:9-40:48
+54-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:36:9-39:48
 55            android:name="com.temple.donation.activities.MainActivity"
-55-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:38:13-52
+55-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:37:13-52
 56            android:exported="false"
-56-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:39:13-37
+56-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:38:13-37
 57            android:label="@string/app_name" />
-57-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:40:13-45
+57-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:39:13-45
 58
 59        <!-- Devotee management -->
 60        <activity
-60-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:43:9-46:54
+60-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:42:9-45:54
 61            android:name="com.temple.donation.activities.DevoteeActivity"
-61-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:44:13-55
+61-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:43:13-55
 62            android:label="@string/title_devotees"
-62-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:46:13-51
+62-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:45:13-51
 63            android:parentActivityName="com.temple.donation.activities.MainActivity" />
-63-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:45:13-66
+63-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:44:13-66
 64
 65        <!-- Monthly donation -->
 66        <activity
-66-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:49:9-52:55
+66-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:48:9-51:55
 67            android:name="com.temple.donation.activities.DonationActivity"
-67-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:50:13-56
+67-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:49:13-56
 68            android:label="@string/title_donations"
-68-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:52:13-52
+68-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:51:13-52
 69            android:parentActivityName="com.temple.donation.activities.MainActivity" />
-69-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:51:13-66
+69-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:50:13-66
 70
 71        <!-- Expenses -->
 72        <activity
-72-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:55:9-58:54
+72-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:54:9-57:54
 73            android:name="com.temple.donation.activities.ExpenseActivity"
-73-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:56:13-55
+73-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:55:13-55
 74            android:label="@string/title_expenses"
-74-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:58:13-51
+74-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:57:13-51
 75            android:parentActivityName="com.temple.donation.activities.MainActivity" />
-75-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:57:13-66
+75-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:56:13-66
 76
 77        <!-- Monthly reports and PDF export -->
 78        <activity
-78-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:61:9-64:52
+78-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:60:9-63:52
 79            android:name="com.temple.donation.activities.ReportActivity"
-79-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:62:13-54
+79-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:61:13-54
 80            android:label="@string/title_report"
-80-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:64:13-49
+80-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:63:13-49
 81            android:parentActivityName="com.temple.donation.activities.MainActivity" />
-81-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:63:13-66
+81-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:62:13-66
 82
 83        <!-- Secure PDF sharing -->
 84        <provider
-84-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:67:9-77:20
+84-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:66:9-76:20
 85            android:name="androidx.core.content.FileProvider"
-85-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:68:13-62
+85-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:67:13-62
 86            android:authorities="com.temple.donation.fileprovider"
-86-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:69:13-67
+86-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:68:13-67
 87            android:exported="false"
-87-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:70:13-37
+87-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:69:13-37
 88            android:grantUriPermissions="true" >
-88-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:71:13-47
+88-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:70:13-47
 89            <meta-data
-89-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:73:13-75:54
+89-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:72:13-74:54
 90                android:name="android.support.FILE_PROVIDER_PATHS"
-90-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:74:17-67
+90-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:73:17-67
 91                android:resource="@xml/file_paths" />
-91-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:75:17-51
+91-->C:\Users\Surajit\OneDrive\Documents\kanduasatsangapp\TempleDonationManager_Android_Java (3)\app\src\main\AndroidManifest.xml:74:17-51
 92        </provider>
 93        <provider
 93-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Surajit\.gradle\caches\transforms-3\4381fccdde393d19d04161b40313d198\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20

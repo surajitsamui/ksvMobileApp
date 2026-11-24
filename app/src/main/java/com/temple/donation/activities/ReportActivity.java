@@ -28,6 +28,7 @@ import com.temple.donation.model.Donation;
 import com.temple.donation.model.Expense;
 import com.temple.donation.utils.ExcelReportGenerator;
 import com.temple.donation.utils.PdfReportGenerator;
+import com.temple.donation.utils.ReportPublishManager;
 
 import java.io.File;
 import java.text.NumberFormat;
@@ -49,6 +50,9 @@ public class ReportActivity extends AppCompatActivity {
     private TextView tvPaidCount, tvPendingCount;
     private TextView tvReportTotalDonation, tvReportTotalExpense, tvReportBalance;
     private RecyclerView rvReportDonations, rvReportExpenses;
+
+    private TextView tvPublishStatus;
+    private Button btnPublishReport;
 
     private DonationAdapter donationAdapter;
     private ExpenseAdapter expenseAdapter;
@@ -115,6 +119,9 @@ public class ReportActivity extends AppCompatActivity {
         tvReportTotalExpense = findViewById(R.id.tvReportTotalExpense);
         tvReportBalance = findViewById(R.id.tvReportBalance);
 
+        tvPublishStatus = findViewById(R.id.tvPublishStatus);
+        btnPublishReport = findViewById(R.id.btnPublishReport);
+
         rvReportDonations = findViewById(R.id.rvReportDonations);
         rvReportExpenses = findViewById(R.id.rvReportExpenses);
 
@@ -142,6 +149,10 @@ public class ReportActivity extends AppCompatActivity {
     private void setupActionButtons() {
         btnViewReport.setOnClickListener(v -> generateReportView());
 
+        if (btnPublishReport != null) {
+            btnPublishReport.setOnClickListener(v -> toggleReportPublication());
+        }
+
         // Monthly exports
         if (btnDownloadPdf != null) btnDownloadPdf.setOnClickListener(v -> createMonthlyPdf(false));
         if (btnSharePdf != null) btnSharePdf.setOnClickListener(v -> createMonthlyPdf(true));
@@ -161,9 +172,50 @@ public class ReportActivity extends AppCompatActivity {
         if (btnExpensesMasterExcel != null) btnExpensesMasterExcel.setOnClickListener(v -> createExpensesMasterExcel());
     }
 
+    private void updatePublishStatusUI(String fy, String month) {
+        boolean isPublished = ReportPublishManager.isReportPublished(this, fy, month);
+        if (tvPublishStatus != null) {
+            if (isPublished) {
+                tvPublishStatus.setText("PUBLISHED");
+                tvPublishStatus.setTextColor(0xFF16A34A);
+                tvPublishStatus.setBackgroundResource(R.drawable.bg_status_paid);
+            } else {
+                tvPublishStatus.setText("NOT PUBLISHED");
+                tvPublishStatus.setTextColor(0xFFEA580C);
+                tvPublishStatus.setBackgroundResource(R.drawable.bg_status_pending);
+            }
+        }
+
+        if (btnPublishReport != null) {
+            if (isPublished) {
+                btnPublishReport.setText("UNPUBLISH REPORT");
+                btnPublishReport.setBackgroundColor(0xFFDC2626);
+            } else {
+                btnPublishReport.setText("PUBLISH REPORT FOR DEVOTEES");
+                btnPublishReport.setBackgroundColor(0xFF1565C0);
+            }
+        }
+    }
+
+    private void toggleReportPublication() {
+        String fy = spReportFY.getSelectedItem().toString();
+        String month = spReportMonth.getSelectedItem().toString();
+        boolean currentStatus = ReportPublishManager.isReportPublished(this, fy, month);
+        boolean newStatus = !currentStatus;
+
+        btnPublishReport.setEnabled(false);
+        ReportPublishManager.setReportPublished(this, fy, month, newStatus, (isPublished, message) -> {
+            btnPublishReport.setEnabled(true);
+            updatePublishStatusUI(fy, month);
+            Toast.makeText(ReportActivity.this, message, Toast.LENGTH_SHORT).show();
+        });
+    }
+
     private void generateReportView() {
         String fy = spReportFY.getSelectedItem().toString();
         String month = spReportMonth.getSelectedItem().toString();
+
+        ReportPublishManager.fetchStatusFromBackend(this, fy, month, isPublished -> updatePublishStatusUI(fy, month));
 
         tvReportTitle.setText("KANDUAH SATSANG VIHAR");
         tvReportSubtitle.setText(month + " " + fy + " Financial Statement");
